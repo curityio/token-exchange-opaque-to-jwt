@@ -1,7 +1,12 @@
 OpaqueToJwt Token Procedure Plugin
 =============================================
 
-A custom Token Procedure plugin for the Curity Identity Server. The plugin is uses the Token Exchange (`RFC 8693 <https://datatracker.ietf.org/doc/html/rfc8693>`_) flow to exchange an opaque token to a JWT.
+.. image:: https://img.shields.io/badge/quality-experiment-red
+    :target: https://curity.io/resources/code-examples/status/
+.. image:: https://img.shields.io/badge/availability-source-blue
+    :target: https://curity.io/resources/code-examples/status/
+
+A custom Token Procedure plugin for the Curity Identity Server. The plugin uses the Token Exchange (`RFC 8693 <https://datatracker.ietf.org/doc/html/rfc8693>`_) flow to exchange an opaque token to a JWT.
 
 Building the Plugin
 ~~~~~~~~~~~~~~~~~~~
@@ -12,14 +17,8 @@ which can be installed.
 Installing the Plugin
 ~~~~~~~~~~~~~~~~~~~~~
 
-To install the plugin, copy the compiled JAR (and all of its dependencies) into the ``${IDSVR_HOME}/usr/share/plugins/opaquetojwt``
+To install the plugin, copy the compiled JAR into the ``${IDSVR_HOME}/usr/share/plugins/opaquetojwt``
 on each node, including the admin node. For more information about installing plugins, refer to the `curity.io/plugins`_.
-
-Required Dependencies
-"""""""""""""""""""""
-
-For a list of the dependencies and their versions, run ``mvn dependency:list``. Ensure that all of these are installed in
-the plugin group; otherwise, they will not be accessible to this plug-in and run-time errors will result.
 
 Configuring the Plugin
 ~~~~~~~~~~~~~~~~~~~~~~
